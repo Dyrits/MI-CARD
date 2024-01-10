@@ -35,6 +35,52 @@ class App extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              const SizedBox(height: 15),
+              Container(
+                  width: 300,
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.phone, color: Colors.teal[900]),
+                      const SizedBox(width: 10),
+                      Text(
+                        "+33 7 69 98 23 90",
+                        style: TextStyle(
+                          fontFamily: "Source Sans",
+                          fontSize: 20,
+                          color: Colors.teal[900],
+                        ),
+                      ),
+                    ],
+                  )),
+              const SizedBox(height: 15),
+              Container(
+                  width: 300,
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.email, color: Colors.teal[900]),
+                      const SizedBox(width: 10),
+                      Text(
+                        "gerritsdylan@gmail.com",
+                        style: TextStyle(
+                          fontFamily: "Source Sans",
+                          fontSize: 20,
+                          color: Colors.teal[900],
+                        ),
+                      ),
+                    ],
+                  ))
             ]),
           ),
         ),

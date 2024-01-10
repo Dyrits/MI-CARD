@@ -25,6 +25,7 @@ class App extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              const SizedBox(height: 10),
               Text(
                 "FULL-STACK DEVELOPER",
                 style: TextStyle(
@@ -35,51 +36,33 @@ class App extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              const SizedBox(height: 15),
-              Container(
-                  width: 300,
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.phone, color: Colors.teal[900]),
-                      const SizedBox(width: 10),
-                      Text(
-                        "+33 7 69 98 23 90",
-                        style: TextStyle(
-                          fontFamily: "Source Sans",
-                          fontSize: 20,
-                          color: Colors.teal[900],
-                        ),
+              const SizedBox(height: 30, child: Divider(color: Colors.white, thickness: 1, indent: 50, endIndent: 50)),
+              Card(
+                  margin: const EdgeInsets.symmetric(horizontal: 50),
+                  child: ListTile(
+                    leading: Icon(Icons.phone, color: Colors.teal[900]),
+                    title: Text(
+                      "+33 7 69 98 23 90",
+                      style: TextStyle(
+                        fontFamily: "Source Sans",
+                        fontSize: 20,
+                        color: Colors.teal[900],
                       ),
-                    ],
+                    ),
                   )),
               const SizedBox(height: 15),
-              Container(
-                  width: 300,
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.email, color: Colors.teal[900]),
-                      const SizedBox(width: 10),
-                      Text(
-                        "gerritsdylan@gmail.com",
-                        style: TextStyle(
-                          fontFamily: "Source Sans",
-                          fontSize: 20,
-                          color: Colors.teal[900],
-                        ),
+              Card(
+                  margin: const EdgeInsets.symmetric(horizontal: 50),
+                  child: ListTile(
+                    leading: Icon(Icons.email, color: Colors.teal[900]),
+                    title: Text(
+                      "gerritsdylan@gmail.com",
+                      style: TextStyle(
+                        fontFamily: "Source Sans",
+                        fontSize: 20,
+                        color: Colors.teal[900],
                       ),
-                    ],
+                    ),
                   ))
             ]),
           ),
